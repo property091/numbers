@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="other.css">
+    </head>
+
+    <body id="body">
+        <!-- press KEY 'S' -->
+        <div id='mods' class="mods"> 
+            <h1>ВЫБЕРИТЕ РЕЖИМ</h1>
+            <div id='mode1' class="mode">Свободный режим</div>
+            <div id='mode2' class="mode">100 примеров</div>
+            <div id='mode3' class="mode">Без ошибок</div>
+        </div>
+        
+        <div id='levels' class="levels"> lvl
+            
+            
+            <div id='level2' class="level">продвинутый</div>
+            <div id='level3' class="level">компьютер</div>
+            <div id='level1' class="level">новичок</div>
+        </div>
+
+
+        <div id='menu' class="menu">menu
+
+            <div id="stats" class="stats">stats</div>
+            <div id="menu_mods" class="menu_mods">mods</div>
+        </div>
+
+        <div id="count" class="count"></div>
+
+        <div id="content">
+        </div>
+
+        <div id="result" class="result">
+            <div id="name_result">RESULTS</div>
+            <div id="result2">    Всего: 0</div>
+
+
+            <div id="mods_result">Результаты режимов
+                <div id="mode1_result" class="mode_result">Свободный режим: 0</div>
+                <div id="mode2_result" class="mode_result">Без ошибок: 0</div>
+
+                <div id="mode3_result" class="mode_result">
+                    100 примеров: 
+                    <input disabled="1" id='checkbox1' type='checkbox' class="level100"></input>
+                    <input disabled="1" id='checkbox2' type='checkbox' class="level100"></input>
+                    <input disabled="1" id='checkbox3' type='checkbox' class="level100"></input>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <script src="mods.js"></script>
+        <script src="levels.js"></script>
+        <script src="math.js"></script>
+        
+
+    </body>
+        
+</html>
