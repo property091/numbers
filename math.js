@@ -17,7 +17,7 @@ addEventListener('keypress', (event) => {
 var s; //сравнение ответа
 
 
-var count = 97;
+var count = 0;
 var globalCount = 0;
 
 //math
