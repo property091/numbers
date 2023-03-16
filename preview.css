@@ -1,0 +1,117 @@
+.button_instruction {
+    position: fixed;
+
+    right: 10px;
+    bottom: 10px;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background-color: rgb(67, 126, 180);
+
+    font-size: 23px;
+    font-family: sans-serif;
+    color: aliceblue;
+
+    visibility: hidden;
+}
+
+.button_instruction:hover {
+    background-color: rgb(32, 77, 119)
+}
+
+
+
+.preview {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(0, 0, 0);
+
+    opacity: 30%;
+
+    visibility: hidden;
+}
+
+.whatIsIT {
+    padding: 10px;
+
+    width: 270px;
+    height: 45px;
+
+    border-radius: 20px;
+    background-color: blue;
+
+    /* text-align: left; */
+    align-items: center;
+
+    font-size: 11px;
+    font-family: monospace;
+    color: aliceblue;
+
+    /* visibility: hidden; */
+}
+.whatIsIT h1 {
+    font-size: 12px;
+}
+
+#whatIsIT1 {
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+
+    
+}
+
+#whatIsIT1:hover {
+    width: 480px;
+    font-size: 20px;
+}
+
+#whatIsIT2 {
+    position: absolute;
+
+    top: 75%;
+    left: 50px;
+}
+
+#whatIsIT2:hover {
+    width: 490px;
+    height: 80px;
+    font-size: 20px;
+}
+
+
+#whatIsIT3 {
+    position: absolute;
+
+    top: 90%;
+    left: 400px;
+}
+
+#whatIsIT3:hover {
+    width: 540px;
+    height: 60px;
+    font-size: 20px;
+}
+
+
+#skip {
+    width: 50px;
+    height: 20px;
+
+    background-color: black;
+    position: fixed;
+
+    bottom: 10px;
+    right: 10px;
+
+    font-size: 20px;
+    font-family: monospace;
+    color: aliceblue;
+}

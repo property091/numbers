@@ -36,12 +36,13 @@ function level3() {
 
 result = document.getElementById('result')
 document.getElementById('stats').addEventListener('click', showStats)
+
 function showStats() {
-    if (result.style.visibility == 'hidden') {
-        document.getElementById('result').style.visibility = 'visible'
+    if (document.getElementById('result').style.visibility == 'visible') {
+        document.getElementById('result').style.visibility = 'hidden'
     }
     else {
-        document.getElementById('result').style.visibility = 'hidden'
+        document.getElementById('result').style.visibility = 'visible'
     }
     
 }

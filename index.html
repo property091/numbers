@@ -4,15 +4,37 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="other.css">
+        <link rel="stylesheet" href="preview.css">
     </head>
 
     <body id="body">
         <!-- press KEY 'S' -->
         <div id='mods' class="mods"> 
-            <h1>ВЫБЕРИТЕ РЕЖИМ</h1>
-            <div id='mode1' class="mode">Свободный режим</div>
-            <div id='mode2' class="mode">100 примеров</div>
-            <div id='mode3' class="mode">Без ошибок</div>
+            <h2>ВЫБЕРИТЕ РЕЖИМ</h2>
+            <div id='mode1' class="mode">
+                <h1>Свободный режим</h1>
+                <div class="content_mode">
+
+                    <div id='what1' class="photo">#</div>
+                    Режим без ограничений, 
+                    в данном режиме постоянно появляются примеры с выбранной сложностью игры. 
+                </div>
+            </div>
+
+            <div id='mode2' class="mode">
+                <h1>100 примеров</h1>
+                <div class="content_mode">
+                    <div id='what2' class="photo">?</div>
+
+                    Всего доступно 3 уровня сложности игры, решив по 100 примеров на каждом уровне можно получить достижения.
+                </div></div>
+
+            <div id='mode3' class="mode">
+                <h1>Без ошибок</h1>
+                <div class="content_mode">
+                    <div id='what3' class="photo">:|</div>
+                    Альтернатива свободному режиму, бросьте себе вызов и проверьте свою точность!
+                </div></div>
         </div>
         
         <div id='levels' class="levels"> lvl
@@ -55,6 +77,7 @@
             </div>
         </div>
 
+        <script src="preview.js"></script>
         <script src="mods.js"></script>
         <script src="levels.js"></script>
         <script src="math.js"></script>

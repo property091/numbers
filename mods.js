@@ -1,8 +1,11 @@
 document.getElementById('body').innerHTML += "<div class='lang'></div>"
 document.getElementById('body').innerHTML += "<div id='about' class='about'></div>"
+document.getElementById('body').innerHTML += "<div id='button_instruction' class='button_instruction'>?</div>"
 
 document.getElementById('about').innerHTML += "<h2>генератор математических примеров</h2>"
 document.getElementById('about').innerHTML += "<h3>press M1</h3>"
+
+document.getElementById('button_instruction').addEventListener('click', showinstruction)
 
 
 var mode = 0;
@@ -69,9 +72,26 @@ function menu() {
 document.getElementById('about').addEventListener('mousedown', showMods)
 
 function showMods() {
-    document.getElementById('about').style.visibility = 'hidden'
-    /* document.getElementById('result').style.visibility = 'visible' */
+    document.getElementById('about').style.animation = 'about 1s ease'
+
+    setTimeout(function() {
+        document.getElementById('about').style.visibility = 'hidden';
+    }, 700);
+    
+    document.getElementById('button_instruction').style.visibility = 'visible';
 }
 
 
+function showinstruction() {
+    
+    if (document.getElementById('instruction').style.visibility == 'visible') {
+        document.getElementById('instruction').style.visibility = 'hidden'
+        
+    }
 
+    else {
+        document.getElementById('instruction').style.visibility = 'visible'
+    }
+
+    
+}
