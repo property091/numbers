@@ -21,7 +21,7 @@ var count = 0;
 var globalCount = 0;
 
 //math
-
+var noExept = 0;
 var valueForNum1 = 20;
 var valueForNum2 = 10;
 
@@ -187,8 +187,9 @@ function answer(value) {
         
         counter.innerHTML = count;
         /* alert('вы решили: ' + count); */
-        if (counter.innerHTML > count) {
-            document.getElementById('mode2_result').innerHTML = "Без ошибок:     " + count
+        if (counter.innerHTML > noExept) {
+            noExept++;
+            document.getElementById('mode2_result').innerHTML = "Без ошибок:     " + counter.innerHTML
         }
 
         document.getElementById('result').style.visibility = 'visible'
