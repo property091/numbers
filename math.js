@@ -88,7 +88,10 @@ function change() {
 
         var posArea = i;
         visibleColor -= 0.1;
-        document.getElementById('0').style.opacity = visibleColor
+        
+        if (document.getElementById('0') != null) {
+            document.getElementById('0').style.opacity = visibleColor
+        }
         
         /* console.log(pos) */
         for (var j = 0; j <= 4; j++) {
@@ -242,15 +245,18 @@ function answer(value) {
     console.log(pos)
     
 
-    if (pos - 10 > 0) {
-        deliteArea = pos - 10
-       
+    if (pos >= 10) {
+        if (pos - 10 > 0) {
+            deliteArea = pos - 10
+           
+        }
+        console.log(deliteArea)
+        
+        if (deliteArea >= 0) {
+            document.getElementById(`${deliteArea}`).remove()
+        }
     }
-    console.log(deliteArea)
     
-    if (deliteArea > 0) {
-        document.getElementById(`${deliteArea}`).remove()
-    }
     
     
     
