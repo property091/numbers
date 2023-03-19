@@ -33,7 +33,7 @@ var pos = 0;
 
 //color
 var visibleColor = 1;
-
+var deliteArea = 0;
 
 function change() {
 
@@ -47,7 +47,7 @@ function change() {
         
     
         for (var i = 0; i <= 4; i++) {
-            area[pos].innerHTML += "<div class='block' id='" + pos + `${i}` + "j" + "'></div>"
+            document.getElementById(`${pos}`).innerHTML += "<div class='block' id='" + pos + `${i}` + "j" + "'></div>"
         }
         CheckArea = false;
     }
@@ -84,10 +84,12 @@ function change() {
 
     //ИЗМЕНЕНИЕ ЦВЕТА БЛОКОВ
     
-    for (var i = pos; i >= 0; i--) {
+    for (var i = pos; i >= deliteArea + 1; i--) {
+
         var posArea = i;
         visibleColor -= 0.1;
-
+        document.getElementById('0').style.opacity = visibleColor
+        
         /* console.log(pos) */
         for (var j = 0; j <= 4; j++) {
             block = document.getElementById(`${posArea}` + j + "j")
@@ -235,6 +237,24 @@ function answer(value) {
     counter.innerHTML = count
     CheckArea = true;
     
+    
+    console.log('//')
+    console.log(pos)
+    
+
+    if (pos - 10 > 0) {
+        deliteArea = pos - 10
+       
+    }
+    console.log(deliteArea)
+    
+    if (deliteArea > 0) {
+        document.getElementById(`${deliteArea}`).remove()
+    }
+    
+    
+    
+
     pos++;
     change()
 }
