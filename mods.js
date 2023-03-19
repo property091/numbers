@@ -17,7 +17,6 @@ mode3 = document.getElementById('mode3').addEventListener('click', mode3)
 
 function mode1() {
     
-    document.getElementById('checkbox2').checked = true
     mode = 1
     count = 0
 
